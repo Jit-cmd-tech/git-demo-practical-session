@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KS Accountability</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* Remove arrows in number input for Chrome, Safari, Edge, and Opera */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  /* Remove arrows in Firefox */
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+</style>
+
+
+<body>
+
+
+
+        <nav class="navbar">
+            <div class="logo">
+                
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="main-part">
+          <div class="container">
+            <div class="apply_box">
+                <h1> 
+                    Sells Data Input
+                    <span class="tital_small">ks</span>
+                </h1>
+
+
+
+
+
+                <form action="https://script.google.com/macros/s/AKfycby9Qbg5rCV51I5KY16moaHQK8GQcg40IycnF0Tgbhp2dUDmO26nAaXwlkrXntye45Di/exec " name="contact-form"> 
+                  
+                  <div class="search-container">
+                    <label for="Customer_name">Customer Name</label>
+                    <input type="text" id="searchInput" placeholder="write customer name " onkeyup="searchFunction()" id="Customer_name"
+                    name="Customer_name">
+                </div>
+                <ul id="results" class="hidden"> 
+                    <!-- Results will be populated here -->
+                 </ul>
+                <ul id="allItems" style="display: none;">
+                    <li>Product 1</li>
+                    <li>Product 2</li>
+                    <li>Service 1</li>
+                    <li>Service 2</li>
+                    <li>Product 3</li>
+                    <li>Service 3</li>
+                    <li>Rajan</li>
+                    <li>Prem</li>
+                    <li>pankaj</li>
+                </ul>
+
+
+
+
+                    <div class="form_container">
+                        <div class="font_control">
+                            <label for="CustomerPanVAt"> Customer PAN or VAT </label>
+                            <input type="number" id="CustomerPanVAt"
+                            name="CustomerPanVAt"
+                            placeholder="Enter Pan or vat no..."  >
+                        </div>
+
+
+
+
+
+    
+                        <div class="font_control">
+                            <label for="Purchases_date"> Date </label>
+                            <input type="Date"" id="Purchases_date"
+                            name="Purchases_date">
+                        </div>
+    
+
+
+                        <div class="font_control">
+                            <label for="Address"> Address </label>
+                            <input type="text" id="Address"
+                            name="Address"
+                            placeholder="Enter Address">
+                        </div>
+    
+
+
+                        <div class="font_control">
+                            <label for="job_role"> Payment status </label>
+                            <select name="job_role" id="job_role" >
+                                <option > Paid </option>
+                                <option > Due </option>
+                            </select>       
+                        </div>
+    
+
+
+                        <div class="textarea_control">
+                            <label for="Note"> Note </label>
+                            <textarea  
+                                id="Note"
+                                name="Note"
+                                row="4"
+                                cols="50"
+                                placeholder="Enter if any note"
+                            ></textarea>
+                        </div>
+    
+
+
+                        <div class="font_control">
+                            <label for="city"> Contact no. </label>
+                            <input type="text" id="Contact"
+                            name="Contact"
+                            placeholder="Enter the contact no.">
+                        </div>
+    
+
+
+
+                        <div class="font_control">
+                            <label for="itemsell"> No. of item sell </label>
+                            <input type="number" id="itemsell"
+                            name="itemsell"
+                            placeholder="Enter itemsell....">
+                        </div>
+    
+
+
+
+                        <div class="font_control">
+                            <label for="AmountWvat"> Amount without VAT </label>
+                            <input type="number" id="AmountWvat" name="AmountWvat" placeholder="Amount">
+                        </div>
+                        <button id="getInteger">calculate</button>
+
+
+
+                        <div class="font_control">
+                            <label for="amountWithVat"> Amount with VAT </label>
+                            <input type="number" id="amountWithVat" name="amountWithVat" placeholder="Total" readonly>
+                        </div>
+                       
+
+
+                    </div>
+    
+                </form>
+                 
+            </div>
+        </div>  
+    
+        </main>
+
+      
+    
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
